@@ -1,0 +1,36 @@
+{
+  "name": "zokeniter",
+  "version": "0.0.1",
+  "description": "Simple search string tokenizer utility",
+  "main": "dist/zokeniter.js",
+  "scripts": {
+    "build": "$(npm bin)/babel src/ -d dist/",
+    "watch": "$(npm bin)/babel src/ -d dist/ --watch",
+    "prepublish": "npm run build",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ZeroarcSoftware/zokeniter.git"
+  },
+  "keywords": [
+    "token",
+    "tokenizer"
+  ],
+  "author": "Zeroarc LLC",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ZeroarcSoftware/zokeniter/issues"
+  },
+  "homepage": "https://github.com/ZeroarcSoftware/zokeniter#readme",
+  "devDependencies": {
+    "babel-cli": "^6.14.0",
+    "babel-preset-es2015": "^6.14.0"
+  },
+  "babel": {
+    "presets": [
+      "es2015"
+    ],
+    "plugins": []
+  }
+}
